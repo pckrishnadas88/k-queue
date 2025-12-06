@@ -41,6 +41,11 @@ const server = net.createServer((socket) => {
             return socket.write(`SUBSCRIBED ${topic}\n`);
         }
 
+        if (cmd === "PING") {
+            return socket.write("PONG\n");
+        }
+
+
         socket.write("ERR unknown command\n");
     });
 

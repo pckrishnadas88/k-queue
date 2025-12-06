@@ -16,5 +16,10 @@ export function parse(data) {
         return { cmd, topic };
     }
 
+    if (cmd === "PING") {
+        return { cmd: "PING" };
+    }
+
+
     return { cmd: "ERR" };
 }
