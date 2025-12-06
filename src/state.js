@@ -21,3 +21,12 @@ export function getSubscribers(topic) {
 export function getQueue(topic) {
     return queues.get(topic) || [];
 }
+
+export function removeSubscriber(socket) {
+    for (const [topic, subs] of subscribers.entries()) {
+        const idx = subs.indexOf(socket);
+        if (idx !== -1) {
+            subs.splice(idx, 1);
+        }
+    }
+}

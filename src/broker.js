@@ -4,7 +4,8 @@ import {
     enqueue,
     addSubscriber,
     getSubscribers,
-    getQueue
+    getQueue,
+    removeSubscriber
 } from "./state.js";
 
 const PORT = 9000;
@@ -44,7 +45,8 @@ const server = net.createServer((socket) => {
     });
 
     socket.on("end", () => {
-        // (Later) remove closed socket from subscriber lists
+        // remove closed socket from subscriber lists
+        removeSubscriber(socket);
     });
 });
 
