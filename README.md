@@ -14,11 +14,7 @@ KQueue/
     └── state.js
 ```
 
----
 
-## README.md
-
-```md
 # KQueue — Minimal TCP Message Queue (Pure Node.js)
 
 KQueue is a **very small, educational message queue** built using raw TCP sockets.
