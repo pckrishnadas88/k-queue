@@ -32,11 +32,11 @@ The goal is to learn **TCP, protocols, buffers, framing, PUB/SUB systems, and br
 - Simple custom text protocol (PUB, SUB, PING)
 
 
-| Milestone                      | Status | Description                                                |
-| ------------------------------ | ------ | ---------------------------------------------------------- |
+| Milestone                      | Status  | Description                                                |
+| ------------------------------ | ------  | -----------------------------------------------------------|
 | TCP & Protocol                 | ✅      | Stabilize PUB, SUB, PING; clean parser; subscriber cleanup |
 | Core Queue                     | ✅      | Topic queues, fanout, backpressure handling                |
-| ACK / Message IDs              | ⬜      | Assign IDs, implement ACK, remove messages after ACK       |
+| ACK / Message IDs              | ✅      | Assign IDs, implement ACK, remove messages after ACK       |
 | Persistence V1                 | ⬜      | WAL or simple disk persistence to survive restarts         |
 | Clustering                     | ⬜      | Multiple broker nodes, heartbeat between nodes             |
 | Leader Election                | ⬜      | Simple leader election for replication coordination        |
