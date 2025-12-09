@@ -37,7 +37,7 @@ The goal is to learn **TCP, protocols, buffers, framing, PUB/SUB systems, and br
 | TCP & Protocol                 | ✅      | Stabilize PUB, SUB, PING; clean parser; subscriber cleanup |
 | Core Queue                     | ✅      | Topic queues, fanout, backpressure handling                |
 | ACK / Message IDs              | ✅      | Assign IDs, implement ACK, remove messages after ACK       |
-| Persistence V1                 | ⬜      | WAL or simple disk persistence to survive restarts         |
+| Persistence V1                 | ✅      | WAL or simple disk persistence to survive restarts         |
 | Clustering                     | ⬜      | Multiple broker nodes, heartbeat between nodes             |
 | Leader Election                | ⬜      | Simple leader election for replication coordination        |
 | Replicated Log                 | ⬜      | Leader writes → followers replicate; commit index handling |

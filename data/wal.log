@@ -1,0 +1,12 @@
+{"type":"pub","id":1,"topic":"email","msg":"Hello_World"}
+{"type":"pub","id":2,"topic":"email","msg":"Hello_World"}
+{"type":"pub","id":3,"topic":"email","msg":"Hello_World"}
+{"type":"ack","id":1}
+{"type":"ack","id":2}
+{"type":"pub","id":4,"topic":"email","msg":"Hello_World"}
+{"type":"ack","id":4}
+{"type":"ack","id":3}
+{"type":"pub","id":5,"topic":"email","msg":"Hello_World"}
+{"type":"ack","id":5}
+{"type":"pub","id":6,"topic":"email","msg":"Hello_World"}
+{"type":"ack","id":6}
